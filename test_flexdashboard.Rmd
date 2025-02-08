@@ -261,11 +261,11 @@ Row
 
 ```{r}
 
-vias_class <- read_sf("vw_ClassificacaoLogradouros.shp", quiet = TRUE, options = "ENCODING=UTF-8")
+#vias_class <- read_sf("vw_ClassificacaoLogradouros.shp", quiet = TRUE, options = "ENCODING=UTF-8")
 
 g + xlab("Longitude") + ylab("Latitude") +
   geom_sf(data = fort, color = "black", fill = NA, inherit.aes = FALSE) +
-  geom_sf(data = vias_class, aes(color = classif_vi), fill = NA, inherit.aes = FALSE) +
+  #geom_sf(data = vias_class, aes(color = classif_vi), fill = NA, inherit.aes = FALSE) +
   labs(title = "Mapa do Município de Fortaleza", subtitle = "Malha Viária", color = "Classificação") + 
   scale_fill_viridis(option = "D", discrete = T) +
   coord_sf(datum = st_crs(fort)) +
