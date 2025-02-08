@@ -28,7 +28,7 @@ library(chron)
 
 options(Encoding="UTF-8")
 options(scipen = 999999)
-setwd("~/dash_mestrado")
+
 ```
 
 Fortaleza {data-icon="fa-home"}
