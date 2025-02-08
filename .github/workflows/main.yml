@@ -54,6 +54,15 @@ jobs:
         run: |
           Rscript -e 'install.packages(c("rmarkdown"))'
           Rscript -e 'install.packages(c("flexdashboard"))'
+          Rscript -e 'install.packages("tidyverse")
+          Rscript -e 'install.packages("plotly")
+          Rscript -e 'install.packages("sf")
+          Rscript -e 'install.packages("OpenStreetMap")
+          Rscript -e 'install.packages("viridis")
+          Rscript -e 'install.packages"(metR")
+          Rscript -e 'install.packages("readxl")
+          Rscript -e 'install.packages("RColorBrewer")
+          Rscript -e 'install.packages("chron")
 
       - name: Render R Markdown
         run: |
